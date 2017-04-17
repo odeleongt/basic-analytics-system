@@ -9,6 +9,11 @@ The scripts will install the necessary dependencies for R and RStudio, and confi
 - Geospatial analytics (rgeos, rgdal, and geostatistics packages such as sf, sp, rgeos etc.)
 
 
+## Usage
+
+Run `./configure-ubuntu.sh` to run all necessary scripts in order.
+
+
 ## Source
 
 Scripts based on @rocker-org dockerfiles (2017-05-17) for
