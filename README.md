@@ -18,11 +18,11 @@ Run `./configure-ubuntu.sh` to run all necessary scripts in order.
 
 Scripts based on @rocker-org dockerfiles (2017-05-17) for
 
-- `docker/r-ver` (`/r-ver/Dockerfile` in rocker-org/rocker-versioned@ca37f95aa2b1242593af10bfaf3007ffb747342b)
-- `docker/rstudio` (`/rstudio/Dockerfile` in rocker-org/rocker-versioned@ca37f95aa2b1242593af10bfaf3007ffb747342b)
-- `docker/tidyverse` (`/tidyverse/Dockerfile` in rocker-org/rocker-versioned@c23efaa5e41305aa1064cd943bed1d2fb16c02a4)
-- `docker/verse` (`/verse/Dockerfile` in rocker-org/rocker-versioned@ed169c0e6a670ba198f8957ace7abfe3870e4fdd)
-- `docker/geospatial` (`/Dockerfile` in rocker-org/geospatial@0b4ebafc6e306264983d51e7b1d8dfa8d90d2f88)
+- `docker/r-ver` ([/r-ver/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/ca37f95aa2b1242593af10bfaf3007ffb747342b/r-ver/Dockerfile))
+- `docker/rstudio` ([/rstudio/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/ca37f95aa2b1242593af10bfaf3007ffb747342b/rstudio/Dockerfile))
+- `docker/tidyverse` ([/tidyverse/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/c23efaa5e41305aa1064cd943bed1d2fb16c02a4/tidyverse/Dockerfile))
+- `docker/verse` ([/verse/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/ed169c0e6a670ba198f8957ace7abfe3870e4fdd/verse/Dockerfile))
+- `docker/geospatial` ([/Dockerfile](https://github.com/rocker-org/geospatial/blob/0b4ebafc6e306264983d51e7b1d8dfa8d90d2f88/Dockerfile))
 
 and adapted to work on a fresh install of Ubuntu 16.04.2 LST.
 
