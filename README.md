@@ -4,7 +4,7 @@ This repository contains a set of scripts that configure a basic R analytics sys
 
 The scripts will install the necessary dependencies for R and RStudio, and configure the system to provide
 
-- Analytics using the @tidyverse
+- Analytics using the [tidyverse](https://github.com/tidyverse/)
 - Document publishing using LaTeX / markdown and a variety of R packages
 - Geospatial analytics (rgeos, rgdal, and geostatistics packages such as sf, sp, rgeos etc.)
 
@@ -16,7 +16,7 @@ Run `./configure-ubuntu.sh` to run all necessary scripts in order.
 
 ## Source
 
-Scripts based on @rocker-org dockerfiles (2017-05-17) for
+Scripts based on [rocker-org](https://github.com/rocker-org) dockerfiles (2017-05-17) for
 
 - `docker/r-ver` ([/r-ver/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/ca37f95aa2b1242593af10bfaf3007ffb747342b/r-ver/Dockerfile))
 - `docker/rstudio` ([/rstudio/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/ca37f95aa2b1242593af10bfaf3007ffb747342b/rstudio/Dockerfile))
