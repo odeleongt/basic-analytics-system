@@ -12,3 +12,6 @@ sudo ./gitflow-installer.sh
 sudo rm -rf gitflow
 rm gitflow-installer.sh
 
+## Setup gedit as commit editor
+git config --global core.editor "gedit -s"
+
