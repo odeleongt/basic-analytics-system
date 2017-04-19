@@ -24,5 +24,5 @@ Scripts based on [rocker-org](https://github.com/rocker-org) dockerfiles (2017-0
 - `docker/verse` ([/verse/Dockerfile](https://github.com/rocker-org/rocker-versioned/blob/ed169c0e6a670ba198f8957ace7abfe3870e4fdd/verse/Dockerfile))
 - `docker/geospatial` ([/Dockerfile](https://github.com/rocker-org/geospatial/blob/0b4ebafc6e306264983d51e7b1d8dfa8d90d2f88/Dockerfile))
 
-and adapted to work on a fresh install of Ubuntu 16.04.2 LST.
+and adapted to work on a fresh install of [Ubuntu 16.04.2 LST](http://releases.ubuntu.com/16.04/ubuntu-16.04.2-desktop-amd64.iso).
 
