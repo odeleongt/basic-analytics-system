@@ -40,5 +40,10 @@ sudo updmap-sys
 ## And some nice R packages for publishing-related stuff 
 . /etc/environment
 
-Rscript -e "install.packages(c('bookdown', 'rticles', 'rmdshower', 'flexdashboard'), repo = 'https://cran.rstudio.com/')"
+## Document packages
+Rscript -e "install.packages(c('bookdown', 'rticles', 'rmdshower', 'flexdashboard', 'pander'), repo = 'https://cran.rstudio.com/')"
+
+## Content packages
+Rscript -e "install.packages(c('leaflet', 'dygraphs', 'plotly'), repo = 'https://cran.rstudio.com/')"
+
 
