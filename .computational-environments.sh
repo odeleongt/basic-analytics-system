@@ -37,3 +37,11 @@ sudo apt-get -y install docker-ce
 ## Verify that Docker CE or Docker EE is installed correctly by running the hello-world image.
 sudo docker run hello-world
 
+## Create a docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+## Pull rocker/verse.
+## To avoid sudo needs logout to reevaluate user group memberships.
+sudo docker pull rocker/verse
+
