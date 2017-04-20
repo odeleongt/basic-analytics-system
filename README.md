@@ -7,6 +7,7 @@ The scripts will install the necessary dependencies for R and RStudio, and confi
 - Analytics using the [tidyverse](https://github.com/tidyverse/)
 - Document publishing using LaTeX / markdown and a variety of R packages
 - Geospatial analytics (rgeos, rgdal, and geostatistics packages such as sf, sp, rgeos etc.)
+- Reproducibility for computational environments (i.e. VirtualBox, Docker, [rocker/verse](https://hub.docker.com/r/rocker/verse/))
 
 
 ## Usage
