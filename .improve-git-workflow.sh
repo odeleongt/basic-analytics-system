@@ -2,7 +2,7 @@
 
 sudo apt-get update
 
-sudo apt-get -y --no-install-recommends install curl gitg
+sudo apt-get -y --no-install-recommends install curl gitg gitk
 
 
 ## Install git flow
