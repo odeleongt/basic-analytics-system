@@ -5,4 +5,5 @@ sudo ./.add-r-rstudio.sh
 ./.configure-publishing.sh
 ./.install-geospatial.sh
 ./.install-odbc.sh
+./.computational-environments.sh
 
