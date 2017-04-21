@@ -4,7 +4,7 @@
 set -x
 trap read debug
 
-R_VERSION=3.3.3
+R_VERSION=3.4.0
 R_HOME=$HOME/R/library/3.0
 
 mkdir -p tmp
@@ -78,11 +78,9 @@ ln -sf $R_HOME/littler/examples/installGithub.r /usr/local/bin/installGithub.r
 ln -sf $R_HOME/littler/bin/r /usr/local/bin/r
 
 ## Clean up from R source install
-cd $HOME
+cd ../..
 
 rm -rf tmp
-
-apt-get remove --purge -y $BUILDDEPS
 
 apt-get autoremove -y
 
