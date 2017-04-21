@@ -1,6 +1,7 @@
 #! /bin/bash
 
-sudo ./.add-r-rstudio.sh
+sudo ./.add-r.sh
+./.add-rstudio.sh
 ./.install-tidyverse.sh
 ./.configure-publishing.sh
 ./.install-geospatial.sh
