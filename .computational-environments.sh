@@ -20,7 +20,8 @@ sudo apt-get -y install dkms
 ################################################################################
 
 ## Dependencies
-sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-commoncurl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 ## TODO: Check keys
 apt-key adv --list-public-keys  --with-fingerprint --with-colons Docker Release | grep fpr
