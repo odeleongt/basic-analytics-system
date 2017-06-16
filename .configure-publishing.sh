@@ -41,7 +41,7 @@ sudo updmap-sys
 . /etc/environment
 
 ## Document packages
-Rscript -e "install.packages(c('bookdown', 'rticles', 'rmdshower', 'flexdashboard', 'pander'), repo = 'https://cran.rstudio.com/')"
+Rscript -e "install.packages(c('bookdown', 'rticles', 'rmdshower', 'flexdashboard', 'pander', 'tufte', 'xaringan'), repo = 'https://cran.rstudio.com/')"
 
 ## Content packages
 Rscript -e "install.packages(c('leaflet', 'dygraphs', 'plotly'), repo = 'https://cran.rstudio.com/')"
