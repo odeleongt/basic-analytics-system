@@ -54,7 +54,7 @@ R_PAPERSIZE=letter R_BATCHSAVE="--no-save --no-restore" R_BROWSER=xdg-open PAGER
  ./configure --enable-R-shlib --enable-memory-profiling --with-readline --with-blas="-lopenblas" --disable-nls --without-recommended-packages
 
 ## Build and install
-make
+make -j 4
 
 make install
 
