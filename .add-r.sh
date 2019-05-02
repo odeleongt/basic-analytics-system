@@ -4,7 +4,7 @@
 set -x
 trap read debug
 
-R_VERSION=3.5.0
+R_VERSION=3.5.3
 R_HOME=$HOME/R/library/3.0
 
 mkdir -p tmp
@@ -66,7 +66,7 @@ echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.metho
 ## Fix library path
 echo "R_LIBS_USER='$R_HOME'" >> /usr/local/lib/R/etc/Renviron
 
-echo "R_LIBS=\${R_LIBS-'$R_HOME:/usr/local/lib/R/library:/usr/lib/R/library'}" >> /usr/local/lib/R/etc/Renviron
+echo "R_LIBS=\${R_LIBS-'$R_HOME:/usr/local/lib/R/library:/usr/lib/R/library'}" >> /usr/local/lib/r/etc/renviron
 
 ## Use littler installation scripts
 Rscript -e "install.packages(c('littler', 'docopt'), repo = 'https://cran.rstudio.com/')"
