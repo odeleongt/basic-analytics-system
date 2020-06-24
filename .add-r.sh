@@ -4,8 +4,8 @@
 set -x
 trap read debug
 
-R_VERSION=3.6.2
-R_HOME=$HOME/R/library/3.0
+R_VERSION=4.0.0
+R_HOME=$HOME/R/library/4.0
 
 mkdir -p tmp
 
@@ -40,7 +40,7 @@ apt-get install -y --no-install-recommends $BUILDDEPS
 cd tmp/
 
 ## Download source code
-curl -O https://cran.r-project.org/src/base/R-3/R-${R_VERSION}.tar.gz
+curl -O https://cran.r-project.org/src/base/R-4/R-${R_VERSION}.tar.gz
 
 ## Extract source code
 tar -xf R-${R_VERSION}.tar.gz
