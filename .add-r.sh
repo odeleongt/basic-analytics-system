@@ -21,7 +21,7 @@ mkdir -p $R_HOME
 
 apt-get update
 
-apt-get install -y --no-install-recommends synaptic bash-completion ca-certificates file fonts-texgyre g++ gfortran gsfonts libbz2-1.0 libcurl3 libicu-dev libopenblas-dev libpangocairo-1.0-0 libpcre3 libpng12-0 libtiff5 liblzma5 locales make unzip zip zlib1g
+apt-get install -y --no-install-recommends synaptic bash-completion ca-certificates file fonts-texgyre g++ gfortran gsfonts libbz2-1.0 libcurl4 libicu-dev libopenblas-dev libpangocairo-1.0-0 libpcre3 libpng16-16 libtiff5 liblzma5 locales make unzip zip zlib1g
 
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 
@@ -29,7 +29,7 @@ locale-gen en_US.utf8
 
 /usr/sbin/update-locale LANG=en_US.UTF-8
 
-BUILDDEPS="curl default-jdk libbz2-dev libcairo2-dev libcurl4-openssl-dev libpango1.0-dev libjpeg-dev libicu-dev libpcre3-dev libpng-dev libreadline-dev libtiff5-dev liblzma-dev libx11-dev libxt-dev perl tcl8.5-dev tk8.5-dev texinfo texlive-extra-utils texlive-fonts-recommended texlive-fonts-extra texlive-latex-recommended x11proto-core-dev xauth xfonts-base xvfb zlib1g-dev"
+BUILDDEPS="curl default-jdk libbz2-dev libcairo2-dev libcurl4-openssl-dev libpango1.0-dev libjpeg-dev libicu-dev libpcre3-dev libpng-dev libreadline-dev libtiff5-dev liblzma-dev libx11-dev libxt-dev perl tcl8.6-dev tk8.6-dev texinfo texlive-extra-utils texlive-fonts-recommended texlive-fonts-extra texlive-latex-recommended x11proto-core-dev xauth xfonts-base xvfb zlib1g-dev"
 
 apt-get install -y --no-install-recommends $BUILDDEPS
 
@@ -54,7 +54,7 @@ R_PAPERSIZE=letter R_BATCHSAVE="--no-save --no-restore" R_BROWSER=xdg-open PAGER
  ./configure --enable-R-shlib --enable-memory-profiling --with-readline --with-blas="-lopenblas" --disable-nls --without-recommended-packages
 
 ## Build and install
-make -j 4
+make -j 8
 
 make install
 
