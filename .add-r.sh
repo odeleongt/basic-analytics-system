@@ -4,7 +4,7 @@
 set -x
 trap read debug
 
-R_VERSION=4.0.2
+R_VERSION=4.0.5
 R_HOME=$HOME/R/library/4.0
 
 mkdir -p tmp
