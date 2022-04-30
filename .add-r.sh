@@ -4,7 +4,7 @@
 set -x
 trap read debug
 
-R_VERSION=4.0.5
+R_VERSION=4.2.0
 R_HOME=$HOME/R/library/4.0
 
 mkdir -p tmp
@@ -25,9 +25,9 @@ sudo apt-get install -y --no-install-recommends synaptic bash-completion ca-cert
 
 echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 
-locale-gen en_US.utf8
+sudo locale-gen en_US.utf8
 
-/usr/sbin/update-locale LANG=en_US.UTF-8
+sudo /usr/sbin/update-locale LANG=en_US.UTF-8
 
 BUILDDEPS="curl default-jdk libbz2-dev libcairo2-dev libcurl4-openssl-dev libpango1.0-dev libjpeg-dev libicu-dev libpcre3-dev libpng-dev libreadline-dev libtiff5-dev liblzma-dev libx11-dev libxt-dev perl tcl8.6-dev tk8.6-dev texinfo texlive-extra-utils texlive-fonts-recommended texlive-fonts-extra texlive-latex-recommended x11proto-core-dev xauth xfonts-base xvfb zlib1g-dev"
 
@@ -86,7 +86,7 @@ sudo apt-get autoremove -y
 
 sudo apt-get autoclean -y
 
-rm -rf /var/lib/apt/lists/*
+sudo rm -rf /var/lib/apt/lists/*
 
 
 ## Change ownership for installed packages
